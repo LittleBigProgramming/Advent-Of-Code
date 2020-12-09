@@ -65,7 +65,7 @@ class PassportProcessing {
      * @param array $passport
      * @return bool
      */
-    private function checkPassportHasRequiredFields(array $passport)
+    private function checkPassportHasRequiredFields(array $passport) : bool
     {
         foreach ($this->requiredFields as $key) {
             if (!array_key_exists($key, $passport)) {
