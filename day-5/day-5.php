@@ -45,9 +45,9 @@ function mapSeatsFromCodes($seatCodes)
 
 $time_start = microtime(true);
 
-echo 'Seat ID: ' . getfindMaxSeatId($seatCodes) . PHP_EOL;
+echo 'Part 1 Max Seat ID: ' . getfindMaxSeatId($seatCodes) . PHP_EOL;
 $seats = mapSeatsFromCodes($seatCodes);
-echo 'My Seat ID: ' . getMySeatId($seats) . PHP_EOL;;
+echo 'Part 2 My Seat ID: ' . getMySeatId($seats) . PHP_EOL;;
 
 $time_end = microtime(true);
 $execution_time = ($time_end - $time_start);
